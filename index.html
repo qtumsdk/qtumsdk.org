@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	
+	<link href='cssOpen_Sans.css' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
+	<meta name="description" content="Qtum Sdk">
+	<meta name="title" content="Qtum Sdk">
+	<meta name="keyword" content="Qtum, Qtum Sdk, Qtum Android Sdk, Qtum IOS Sdk, Qtum JS Sdk, Qtum PAY SDK, Qt SDK">
+	<meta http-equiv="author" content="Barron Webster">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" href="favicon.png"  type="image/x-icon"/>
+
+	<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>	
+<script>
+$(document).ready(function() {
+
+    // Click event for any anchor tag that's href starts with #
+    $('a[href^="#"]').click(function(event) {
+
+        // The id of the section we want to go to.
+        var id = $(this).attr("href");
+
+        // An offset to push the content down from the top.
+        var offset = 0;
+
+        // Our scroll target : the top position of the
+        // section that has the id referenced by our href.
+        var target = $(id).offset().top - offset;
+
+        // The magic...smooth scrollin' goodness.
+        $('html, body').animate({scrollTop:target}, 1000);
+
+        //prevent the page from jumping down to our section.
+        event.preventDefault();
+    });
+});
+</script>
+
+</head>
+
+<body onunload="">
+
+	<div id="hero">
+		<h1>QTUM SDK</h1>
+	</div>
+
+	<h2>We support all platforms，For developers</h2>
+
+	<div id="categories" class="row">
+		<div class="col-sm-4 category-content"> 
+			<a href="https://github.com/qtumsdk/android-sdk">
+			<img src="1.svg"/>
+			<h3 class="text-center" id="caption1">ANDROID SDK</h3>
+			</a>
+		</div>
+		
+		<div class="col-sm-4 category-content">
+			<a href="https://github.com/qtumsdk/ios-sdk">
+			<img id="reverse" src="2.svg"/>
+			<h3 class="text-center" id="caption2">IOS SDK</h3>
+			</a>
+		</div>
+		
+		<div class="col-sm-4 category-content">
+			<a href="https://github.com/qtumsdk/js-sdk">
+			<img src="3.svg"/>
+			<h3 class="text-center" id="caption3">JS SDK</h3>
+			</a>
+		</div>
+	</div>
+	<p id="blarg">by <a href="https://github.com/qtumsdk">qtumsdk team</a></p>
+
+</body></html>
